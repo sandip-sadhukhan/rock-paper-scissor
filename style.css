@@ -1,0 +1,180 @@
+@font-face{
+    src: url('header.ttf');
+    font-family: header;
+}
+@font-face{
+    src: url('player.otf');
+    font-family: player;
+}
+@font-face{
+    src: url('text.otf');
+    font-family: text;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.header{
+    text-align: center;
+    font-family: header;
+    margin:0 auto;
+    color:blueviolet;
+    font-size: 65px;
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+.sub{
+    border:2px solid black;
+}
+.player{
+    text-align: center;
+    font-family: 'player';
+    font-size:35px;
+    color:seagreen;
+}
+.yourscore,.computerscore{
+    margin: 0 12px;
+    font-size:30px;
+    color:dodgerblue;
+    font-family: text;
+}
+.sub img{
+    width:200px;
+    margin-left:30%;  
+}
+#comimg{
+    transform: scaleX(-1);
+}
+.yourturn{
+    font-family: 'text';
+    margin:20px 15px;
+    font-size:30px;
+    color:tomato;
+}
+select{
+    width:200px !important;
+    height:50px;
+    padding:5px 15px;
+    font-size:25px;
+    font-family: 'text';
+    color:teal;
+    cursor: pointer;
+}
+ option{
+    font-size:25px;
+    font-family: 'text';
+    cursor: pointer;
+}
+#computerselect{
+    font-size:25px;
+    font-family: 'text';
+    cursor: not-allowed;
+    color:teal;
+    width:200px;
+    height:50px;
+    padding:5px 15px;
+}
+.footer{
+    margin:20px auto;
+    width:100%;
+    text-align: center;
+}
+.footer button{
+    padding:10px 30px;
+    font-family: 'text';
+    margin-left: 10px;
+    margin-bottom: 0;
+    color:white;
+    background-color:teal;
+    font-size:20px;
+    border:none;
+    cursor: pointer;
+}
+.footer button:hover{
+    opacity:0.8;
+    box-shadow: 0 0 10px black;
+}
+.credit{
+    text-align: center;
+    font-size:20px;
+    font-family: 'player';
+    background-color: tomato;
+    color:white;
+}
+.credit a{
+    font-family: 'player';
+    color:white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 Media Quary                                */
+/* -------------------------------------------------------------------------- */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        overflow-x:hidden;
+    }
+    .header{
+        font-family: header;
+        margin:10px auto;
+        color:blueviolet;
+        font-size: 40px;
+    }
+    .player{
+        text-align: center;
+        font-family: 'player';
+        font-size:25px;
+        color:seagreen;
+    }
+    .yourscore,.computerscore{
+        /* margin: 15px 10px; */
+        text-align: center;
+        font-size:20px;
+        margin-bottom: 20px;
+    }
+    .sub img{
+        width:130px;
+        margin: 0 50px;
+    }
+    
+    select{
+        width:120px !important;
+        height:35px;
+        margin-left:40px;
+        padding:5px 10px;
+        font-size:18px;
+        font-family: 'text';
+        color:teal;
+        cursor: pointer;
+    }
+    option{
+        font-size:18px;
+        font-family: 'text';
+        cursor: pointer;
+    }
+    #computerselect{
+        font-size:18px;
+        font-family: 'text';
+        cursor: not-allowed;
+        color:teal;
+        margin-left:20px;
+        width:120px;
+        height:35px;
+        padding:5px 10px;
+    }
+    .yourturn{
+        text-align: center;
+        font-size:20px;
+    }
+    .footer button{
+        padding:10px 30px;
+        font-size:16px;
+    }
+    .credit{
+        font-size:15px;
+} 

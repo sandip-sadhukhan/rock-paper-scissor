@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock-paper-seissor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="rock.png" type="image/x-icon">
+</head>
+
+<!-- ------------------ Project Name : Rock Paper Scissor ------------------ -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--     Author : Sandip Sadhukhan, Website - www.yourwebsite.github.io      -->
+<!-- ----------------------------------------------------------------------- -->
+
+<body>
+    <div class="header">Rock Paper Scissor </div>
+    <div class="content">
+        <div class="sub">
+            <div class="player">You</div>
+            <div class="yourscore">Score : <span id="yourscore">0</span></div>
+            <img src="paper.png" alt="" id="imgchange">
+            <div class="yourturn">You Select :<br>
+                <select name="" id="yourselect" onchange="picchange();">
+                    <option>Rock</option>
+                    <option selected>Paper</option>
+                    <option>Scissor</option>
+                </select>
+            </div>
+        </div>
+        <div class="sub">
+            <div class="player">Computer</div>
+            <div class="computerscore">Score : <span id="comscore">0</span></div>
+            <img src="no.png" alt="" id="comimg">
+            <div class="yourturn">Computer Select :<br>
+                <input type="text" id="computerselect" value="" disabled>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <button onclick="checkresult()">Check Result</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+    <div class="credit">This Game is Developed By <a href="https://yourwebsite.github.io/" target="_blank">Sandip Sadhukhan.</a></div>
+<script src="script.js"></script>
+</body>
+</html>
